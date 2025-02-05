@@ -10,7 +10,7 @@ const Add = ({ url }) => {
     name: "",
     description: "",
     price: "",
-    category: "",
+    category: "Wall Decor",
   });
 
   const onChangeHandler = (event) => {
