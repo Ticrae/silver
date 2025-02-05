@@ -171,7 +171,7 @@ const PlaceOrder = () => {
               </b>
             </div>
           </div>
-          <button type="submit" onClick={() => navigate("/order")}>
+          <button type="submit" onClick={() => navigate("/verify")}>
             PROCEED TO PAYMENT
           </button>
         </div>
