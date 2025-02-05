@@ -13,6 +13,14 @@ import { url } from "./assets/assets";
 
 const App = () => {
   const [token, setToken] = useState("");
+    useEffect(() => {
+    async function loadData() {
+      if (localStorage.getItem("token")) {
+        setToken(localStorage.getItem("token"));
+      }
+    }
+    loadData();
+  }, []);
 
   return (
     <main>
