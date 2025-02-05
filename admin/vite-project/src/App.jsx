@@ -18,7 +18,7 @@ const App = () => {
     <main>
       <ToastContainer />
       {token === "" ? (
-        <Login setToken={setToken} />
+        <Login setToken={setToken} url = {url}/>
       ) : (
         <div>
           <Navbar />
