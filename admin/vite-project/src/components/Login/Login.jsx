@@ -19,7 +19,7 @@ const Login = ({ setToken, url }) => {
   const onLogin = async (event) => {
     try {
       event.preventDefault();
-      const response = await axios.post(`${url}api/user/admin, data);
+      const response = await axios.post(`${url}api/user/admin`, data);
 
       if (response.data.success) {
         setToken(response.data.token);
