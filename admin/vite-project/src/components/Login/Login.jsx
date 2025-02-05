@@ -3,7 +3,7 @@ import "./Login.css";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-const Login = ({ setToken }) => {
+const Login = ({ setToken, url }) => {
   const navigate = useNavigate();
   const [data, setData] = useState({
     email: "",
@@ -19,7 +19,7 @@ const Login = ({ setToken }) => {
   const onLogin = async (event) => {
     try {
       event.preventDefault();
-      const response = await axios.post("https://gorek-backend.onrender.com/api/user/admin", data);
+      const response = await axios.post(`${url}api/user/admin, data);
 
       if (response.data.success) {
         setToken(response.data.token);
