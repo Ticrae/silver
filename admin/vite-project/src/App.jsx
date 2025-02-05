@@ -12,7 +12,6 @@ import axios from "axios";
 import { url } from "./assets/assets";
 
 const App = () => {
-  axios.defaults.baseURL = "http://localhost:4000/";
   const [token, setToken] = useState("");
 
   return (
