@@ -16,4 +16,4 @@ export const assets = {
   logout_icon,
 };
 
-export const url = "https://gorek-backend.onrender.com";
+export const url = "https://gorek-backend.onrender.com/";
